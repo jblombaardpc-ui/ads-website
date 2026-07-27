@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "vas-reversal-ads",
+  "compatibility_date": "2026-07-26",
+
+  // Assets-only Worker: no JS runtime, Cloudflare serves the files directly.
+  // Headers and caching come from assets/_headers.
+  "assets": {
+    "directory": "./assets"
+  },
+
+  // Binds ads.vas-reversal.ca to this Worker and creates the DNS record
+  // automatically on first deploy. The zone is already in the account.
+  "routes": [
+    {
+      "pattern": "ads.vas-reversal.ca",
+      "custom_domain": true
+    }
+  ],
+
+  "observability": {
+    "enabled": true
+  }
+}
