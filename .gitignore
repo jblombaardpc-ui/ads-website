@@ -1,3 +1,8 @@
 node_modules/
 .wrangler/
 .DS_Store
+
+# Local-only. Keeps identifying detail out of the public repo.
+*.local.md
+wrangler.jsonc
+scripts/

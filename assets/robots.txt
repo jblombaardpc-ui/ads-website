@@ -1,6 +1,2 @@
-# ads.vas-reversal.ca is an asset host for paid advertising creative.
-# It holds no patient-facing content and must never appear in search
-# results or compete with vas-reversal.ca.
-
 User-agent: *
 Disallow: /
